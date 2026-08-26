@@ -1,0 +1,6 @@
+/* resetar as configurações do css*/
+*{
+margin: 0;/*significa remover completamente qualquer espaçamento externo ao redor dos quatro lados (superior, direita, inferior e esquerda) de um */
+padding: 0;/*é a propriedade usada para criar um espaçamento interno entre o conteúdo de um elemento e a sua borda */
+box-sizing: border-box;/*CSS é uma propriedade usada para incluir o preenchimento*/
+}
