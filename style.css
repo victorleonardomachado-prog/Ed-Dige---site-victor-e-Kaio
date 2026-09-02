@@ -4,3 +4,36 @@ margin: 0;/*significa remover completamente qualquer espaçamento externo ao red
 padding: 0;/*é a propriedade usada para criar um espaçamento interno entre o conteúdo de um elemento e a sua borda */
 box-sizing: border-box;/*CSS é uma propriedade usada para incluir o preenchimento*/
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: blue;
+    color: #33333;
+    line-height: 1.6;
+    padding: 20px;
+}
+/* ESTILIZANDO AS TAGS PRINCIPAIS DA EMPRESA*/
+h1 {
+    color: #1a365d;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+h2{
+    color: #2b6cb0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-botton: 2px solid #cbd5e0;
+    padding-bottom: 5px;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+img{
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
