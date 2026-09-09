@@ -6,8 +6,8 @@ box-sizing: border-box;/*CSS é uma propriedade usada para incluir o preenchimen
 }
 body {
     font-family: 'Arial', sans-serif;
-    background-color: blue;
-    color: #33333;
+    background-color: #3182ce;
+    color: black;
     line-height: 1.6;
     padding: 20px;
 }
