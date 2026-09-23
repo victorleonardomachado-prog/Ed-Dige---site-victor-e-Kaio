@@ -2,30 +2,176 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsividade para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKTI - Peças e Componentes de Alta Performance</title>
+    <!-- Vinculação do arquivo de estilos externo -->
     <link rel="stylesheet" href="style.css">
-    <title>SITE da VKTI</title>
 </head>
 <body>
-    <h1>VKTI peças e componentes</h1>
-    <h2>Quem Somos?</h2>
-    <p>A VKTI é uma empresa especialisada em Hardwers e partes de Computador. Fornecemos as melhores peças para sua demanda.</p>
 
-    <img src="logotipo.jpg" alt="Logo tipo VKTI com placa de video, e placas mãe">
+    <!-- Atalho "Skip to main content": Essencial para navegadores por teclado pularem o menu de navegação -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
-    <h2>Nossos Produtos</h2>
-    <ul> 
-        <li>Placas de Vídeo</li>
-        <li>Placas-Mãe</li>
-        <li>Processadores</li> 
-    </ul>
+    <!-- ARIA Live Region: Notifica leitores de tela sobre mensagens dinâmicas (ex: envio do formulário) -->
+    <div id="status-formulario" class="sr-only" aria-live="polite"></div>
 
-      <a href="https://pt.wikipedia.org/wiki/Hardware" target="_blank">Saiba mais sobre o nosso setor</a>
+    <!-- CABEÇALHO DA PÁGINA (<header>): Contém a identidade da empresa e o menu de navegação principal -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Usamos a tag <img> com 'alt' descritivo. Para logos institucionais, indicamos o nome da marca. -->
+                <img src="logotipo.jpg" alt="VKTI Peças e Componentes - Logotipo Oficial">
+            </div>
 
-        <h2>Contato</h2>
-        <address> 
-            E-mail:vkti.peças@gmail.com.br<br> 
-            Telefone: (46) 9937-3642 
-        </address>
+            <!-- NAVEGAÇÃO PRINCIPAL (<nav>): Identifica um bloco de links de navegação para o leitor de tela -->
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (<main>): Deve existir apenas um por página. Concentra o conteúdo central. -->
+    <main id="conteudo-principal">
+
+        <!-- SEÇÃO SOBRE A EMPRESA (<section>): Agrupa um conteúdo temático relevante -->
+        <section id="sobre" class="section section-about">
+            <div class="container">
+                <!-- O h1 é reservado para o título principal da página/seção primária -->
+                <h1>VKTI Peças e Componentes</h1>
+                <p class="lead-text">
+                    A VKTI é uma empresa especializada no fornecimento de hardwares e peças de alta performance para computadores. Garantimos a solução ideal para a sua necessidade de infraestrutura de TI e setups de alta exigência.
+                </p>
+                <div class="hero-actions">
+                    <!-- Botões estilo CTA (Call to Action) utilizando link semântico com função de ação -->
+                    <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="https://pt.wikipedia.org/wiki/Hardware" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        Saiba mais sobre o setor
+                        <!-- Texto exclusivo para leitores de tela avisando que o link abre em nova aba (Diretriz WCAG) -->
+                        <span class="sr-only">(abre em uma nova aba)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section id="produtos" class="section">
+            <div class="container">
+                <!-- Estrutura hierárquica de títulos: h2 para seções dentro da página -->
+                <h2>Nossos Produtos</h2>
+                <p>Trabalhamos com os melhores fabricantes do mercado global para oferecer peças com garantia e nota fiscal.</p>
+
+                <!-- Grid de produtos organizado com uma lista não ordenada (<ul>) -->
+                <ul class="card-grid">
+                    <li class="card">
+                        <h3>Placas de Vídeo</h3>
+                        <p>Placas para processamento gráfico avançado, renderização 3D e sistemas gamer de alto desempenho.</p>
+                        <a href="#contato" class="card-link" aria-label="Consultar modelos de Placas de Vídeo">Consultar modelos</a>
+                    </li>
+                    <li class="card">
+                        <h3>Placas-Mãe</h3>
+                        <p>Bases sólidas e compatíveis com as arquiteturas mais recentes de processadores do mercado.</p>
+                        <a href="#contato" class="card-link" aria-label="Consultar modelos de Placas-Mãe">Consultar modelos</a>
+                    </li>
+                    <li class="card">
+                        <h3>Processadores</h3>
+                        <p>Unidades centrais de processamento com múltiplos núcleos para servidores e estações de trabalho.</p>
+                        <a href="#contato" class="card-link" aria-label="Consultar modelos de Processadores">Consultar modelos</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DIFERENCIAIS COMERCIAIS -->
+        <section id="diferenciais" class="section section-alt">
+            <div class="container">
+                <h2>Por que escolher a VKTI?</h2>
+                <div class="features-grid">
+                    <article class="feature-item">
+                        <h3>Garantia Estendida</h3>
+                        <p>Suporte completo contra defeitos de fabricação e peças sob reposição ágil.</p>
+                    </article>
+                    <article class="feature-item">
+                        <h3>Entrega Técnica</h3>
+                        <p>Verificação de compatibilidade dos componentes antes do envio da mercadoria.</p>
+                    </article>
+                    <article class="feature-item">
+                        <h3>Atendimento Corporativo</h3>
+                        <p>Condições faturadas e suporte dedicado para empresas e departamentos de TI.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO E FORMULÁRIO ACESSÍVEL -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p>Preencha o formulário abaixo para receber uma cotação personalizada de componentes.</p>
+
+                <div class="contact-wrapper">
+                    <!-- FORMULÁRIO (<form>): Totalmente associado com rótulos (<label>) -->
+                    <form class="contact-form" action="#" method="post" aria-describedby="form-instrucao">
+                        <p id="form-instrucao" class="form-instruction">
+                            Campos marcados com asterisco (<span aria-hidden="true">*</span>) são de preenchimento obrigatório.
+                        </p>
+
+                        <!-- Campo Nome -->
+                        <div class="form-group">
+                            <!-- O atributo 'for' do label DEVE corresponder exatamente ao 'id' do input -->
+                            <label for="nome">Nome completo <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="nome" name="nome" required aria-required="true" autocomplete="name">
+                        </div>
+
+                        <!-- Campo E-mail -->
+                        <div class="form-group">
+                            <label for="email">E-mail corporativo <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                        </div>
+
+                        <!-- Campo Telefone -->
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                        </div>
+
+                        <!-- Campo Mensagem -->
+                        <div class="form-group">
+                            <label for="mensagem">Detalhes do pedido ou mensagem <span class="required" aria-hidden="true">*</span></label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true"></textarea>
+                        </div>
+
+                        <!-- Botão de Envio do Formulário -->
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+
+                    <!-- INFORMAÇÕES DE CONTATO (<address>): Representa dados de contato direto do responsável -->
+                    <div class="contact-info">
+                        <h3>Dados de Contato</h3>
+                        <address>
+                            <p><strong>E-mail:</strong> <a href="mailto:vkti.pecas@gmail.com.br">vkti.pecas@gmail.com.br</a></p>
+                            <p><strong>Telefone:</strong> <a href="tel:+554699373642">(46) 9937-3642</a></p>
+                            <p><strong>Atendimento:</strong> Segunda a Sexta, das 08h às 18h</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DA PÁGINA (<footer>): Informações de direitos autorais e links complementares -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 VKTI Peças e Componentes. Todos os direitos reservados.</p>
+            <p class="footer-credit">Desenvolvido com foco em Acessibilidade Web (WCAG 2.1 AA).</p>
+        </div>
+    </footer>
+
 </body>
 </html>
